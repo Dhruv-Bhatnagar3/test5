@@ -13,8 +13,8 @@ from TwitchChannelPointsMiner.classes.entities.Bet import Strategy, BetSettings,
 from TwitchChannelPointsMiner.classes.entities.Streamer import Streamer, StreamerSettings
 
 twitch_miner = TwitchChannelPointsMiner(
-    username="s1renwastaken",
-    password="nicehatnowdie",           # If no password will be provided, the script will ask interactively
+    username="ilovegambling5",
+    password="Niceehatnowdie",           # If no password will be provided, the script will ask interactively
     claim_drops_startup=False,                  # If you want to auto claim all drops from Twitch inventory on the startup
     priority=[                                  # Custom priority in this case for example:
         Priority.STREAK,                        # - We want first of all to catch all watch streak from all streamers
@@ -47,7 +47,7 @@ twitch_miner = TwitchChannelPointsMiner(
             disable_notification=True,                                              # Revoke the notification (sound/vibration)
         ),
         discord=Discord(
-            webhook_api="https://discord.com/api/webhooks/1123771445714112532/TfOW9YNFQWd9Rzhs7SmFV4aSMfhLjGvKVKTtlbchzerRBLRfgL0KWgOK9S_tQYv3IfMt",  # Discord Webhook URL
+            webhook_api="https://discord.com/api/webhooks/1125648981498806343/Hk6vUPWMN4-x6nc94derZ7gtegQwBArwyl9vO1tq6aRfdJFBkONdDf2SlCvLKzZ1oBN0",  # Discord Webhook URL
             events=[Events.STREAMER_ONLINE, Events.BET_LOSE, Events.BET_WIN, Events.GAIN_FOR_WATCH, Events.GAIN_FOR_RAID, Events.GAIN_FOR_CLAIM, Events.GAIN_FOR_WATCH_STREAK, Events.STREAMER_OFFLINE,Events.BET_FAILED,Events.BET_START,Events.MOMENT_CLAIM, Events.BET_GENERAL, Events.BET_REFUND],                                  # Only these events will be sent to the chat
         ),
         matrix=Matrix(
